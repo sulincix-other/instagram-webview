@@ -5,14 +5,14 @@ src = [
 ]
 
 # Qt5 dependencies
-qt5_dep = [
-    dependency('Qt5Core'),
-    dependency('Qt5Gui'),
-    dependency('Qt5Widgets'),
+qt6_dep = [
+    dependency('Qt6Core'),
+    dependency('Qt6Gui'),
+    dependency('Qt6Widgets'),
 ]
 
 # -fPIC required
 add_project_arguments('-fPIC', language: 'cpp')
 
 # executable file
-executable('main', src, dependencies: qt5_dep)
+executable('main', src, dependencies: qt6_dep)
