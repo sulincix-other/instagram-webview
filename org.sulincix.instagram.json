@@ -2,13 +2,20 @@
     "app-id": "org.sulincix.instagram",
     "sdk": "org.kde.Sdk",
     "runtime": "org.kde.Platform",
+    "base": "io.qt.qtwebengine.BaseApp",
+    "base-version": "6.10",
+    "command": "instagram-qt6",
     "runtime-version": "6.10",
     "finish-args": [
         "--share=network",
         "--share=ipc",
+        "--socket=pulseaudio",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--device=dri"
+        "--socket=system-bus",
+        "--device=dri",
+        "--env=QTWEBENGINEPROCESS_PATH=/app/bin/QtWebEngineProcess",
+        "--env=QTWEBENGINE_CHROMIUM_FLAGS=--no-sandbox"
     ],
     "modules": [
         {
