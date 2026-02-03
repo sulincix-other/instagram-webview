@@ -9,6 +9,7 @@ qt6_dep = [
     dependency('Qt6Core'),
     dependency('Qt6Gui'),
     dependency('Qt6Widgets'),
+    dependency('Qt6WebEngineWidgets'),
 ]
 
 # -fPIC required
