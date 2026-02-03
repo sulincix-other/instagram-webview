@@ -16,4 +16,6 @@ qt6_dep = [
 add_project_arguments('-fPIC', language: 'cpp')
 
 # executable file
-executable('main', src, dependencies: qt6_dep)
+executable('instagram-qt6', src, dependencies: qt6_dep, install: true)
+install_data('instagram.desktop', install_dir : get_option('prefix') / 'share/applications/')
+install_data('instagram-qt6.svg', install_dir : get_option('prefix') / 'share/icons/hicolor/scalable/apps/')

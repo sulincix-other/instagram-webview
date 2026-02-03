@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Instagram
+Comment=Instagram client built with Qt6
+Exec=instagram-qt6
+Icon=instagram-qt6
+Terminal=false
+Categories=Network;Social;
+StartupNotify=true
